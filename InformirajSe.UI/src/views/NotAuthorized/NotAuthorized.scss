@@ -1,0 +1,670 @@
+$primarycolor: #6633FF;
+$primaryRgba: rgb(102, 51, 255, 0.9);
+
+@mixin test-border {
+    border: 1px solid black;
+}
+
+
+
+
+.main-content{
+    // @include test-border;
+    width: 90%;
+    height: 547px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    .left-side{
+        // @include test-border;
+
+        .not-auth-text{
+            font-size: 80px;
+            text-align: left;
+            color: $primarycolor;
+            margin-top: 15%;
+        }
+
+        .back-button{
+            margin-top: 5%;
+            margin-left: -84%;
+            width: 15%;
+            height: 8%;
+            background-color: $primarycolor;
+            color: #fff;
+            font-weight: bolder;
+            font-size:16px;
+            border:none;
+            border-radius: 6px;
+        }
+        .back-button:active {
+            background-color: #66f;
+            // #0056b3
+          }
+          
+    }
+    
+    .right-side{
+        // @include test-border;
+
+        .blob {
+            width: 400px;
+            height: 400px;
+            background-color: #6633FF;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob1 {
+            width: 250px;
+            height: 250px;
+            background-color: #0056b3;
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation1 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation1 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(40% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob2 {
+            width: 300px;
+            height: 300px;
+            background-color: #66ccff;
+            position: absolute;
+            top: 57%;
+            left: 77%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation2 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation2 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+    }
+}
+
+@media only screen and (max-width: 1250px){
+  .main-content{
+    // @include test-border;
+    width: 90%;
+    height: 547px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    .left-side{
+        // @include test-border;
+
+        .not-auth-text{
+            font-size: 60px;
+            text-align: left;
+            color: $primarycolor;
+            margin-top: 15%;
+        }
+
+        .back-button{
+            margin-top: 5%;
+            margin-left: -84%;
+            width: 15%;
+            height: 8%;
+            background-color: $primarycolor;
+            color: #fff;
+            font-weight: bolder;
+            font-size:16px;
+            border:none;
+            border-radius: 6px;
+        }
+        .back-button:active {
+            background-color: #66f;
+            // #0056b3
+          }
+          
+    }
+    
+    .right-side{
+        // @include test-border;
+
+        .blob {
+            width: 350px;
+            height: 350px;
+            background-color: #6633FF;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob1 {
+            width: 200px;
+            height: 200px;
+            background-color: #0056b3;
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation1 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation1 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(40% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob2 {
+            width: 250px;
+            height: 250px;
+            background-color: #66ccff;
+            position: absolute;
+            top: 57%;
+            left: 77%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation2 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation2 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+    }
+}
+}
+
+@media only screen and (max-width: 1000px){
+  .main-content{
+    // @include test-border;
+    width: 90%;
+    height: 547px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    .left-side{
+        // @include test-border;
+
+        .not-auth-text{
+            font-size: 50px;
+            text-align: left;
+            color: $primarycolor;
+            margin-top: 15%;
+        }
+
+        .back-button{
+            margin-top: 5%;
+            margin-left: -84%;
+            width: 15%;
+            height: 8%;
+            background-color: $primarycolor;
+            color: #fff;
+            font-weight: bolder;
+            font-size:16px;
+            border:none;
+            border-radius: 6px;
+        }
+        .back-button:active {
+            background-color: #66f;
+            // #0056b3
+          }
+          
+    }
+    
+    .right-side{
+        // @include test-border;
+
+        .blob {
+            width: 300px;
+            height: 300px;
+            background-color: #6633FF;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob1 {
+            width: 150px;
+            height: 150px;
+            background-color: #0056b3;
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation1 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation1 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(40% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob2 {
+            width: 200px;
+            height: 200px;
+            background-color: #66ccff;
+            position: absolute;
+            top: 57%;
+            left: 77%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation2 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation2 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+    }
+}
+}
+
+
+
+@media only screen and (max-width: 800px){
+  .main-content{
+    // @include test-border;
+    width: 90%;
+    height: 547px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    .left-side{
+        // @include test-border;
+
+        .not-auth-text{
+            font-size: 40px;
+            text-align: left;
+            color: $primarycolor;
+            margin-top: 25%;
+        }
+
+        .back-button{
+            margin-top: 5%;
+            margin-left: -74%;
+            width: 80px;
+            height: 8%;
+            background-color: $primarycolor;
+            color: #fff;
+            font-weight: bolder;
+            font-size:16px;
+            border:none;
+            border-radius: 6px;
+        }
+        .back-button:active {
+            background-color: #66f;
+            // #0056b3
+          }
+          
+    }
+    
+    .right-side{
+        // @include test-border;
+
+        .blob {
+            width: 250px;
+            height: 250px;
+            background-color: #6633FF;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob1 {
+            width: 100px;
+            height: 100px;
+            background-color: #0056b3;
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation1 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation1 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(40% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob2 {
+            width: 150px;
+            height: 150px;
+            background-color: #66ccff;
+            position: absolute;
+            top: 57%;
+            left: 77%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation2 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          }
+          
+          @keyframes blobAnimation2 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+    }
+}
+}
+
+@media only screen and (max-width: 700px){
+  .main-content{
+    // @include test-border;
+    width: 90%;
+    height: 547px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+    .left-side{
+        // @include test-border;
+
+        .not-auth-text{
+            font-size: 30px;
+            text-align: center;
+            color: $primarycolor;
+            margin-top: 25%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .back-button{
+            margin-top: 460px;
+            margin-left: 0%;
+            margin-bottom: 50px;
+            width: 80px;
+            height: 8%;
+            background-color: $primarycolor;
+            color: #fff;
+            font-weight: bolder;
+            font-size:16px;
+            border:none;
+            border-radius: 6px;
+        }
+        .back-button:active {
+            background-color: #66f;
+            // #0056b3
+          }
+          
+    }
+    
+    .right-side{
+        // @include test-border;
+
+        .blob {
+            width: 250px;
+            height: 250px;
+            background-color: #6633FF;
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            margin-top: 100px;
+            margin-left: -30%;
+          }
+          
+          @keyframes blobAnimation {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob1 {
+            width: 100px;
+            height: 100px;
+            background-color: #0056b3;
+            position: absolute;
+            top: 45%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation1 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            margin-top: 100px;
+            margin-left: -30%;
+          }
+          
+          @keyframes blobAnimation1 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(40% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+          .blob2 {
+            width: 150px;
+            height: 150px;
+            background-color: #66ccff;
+            position: absolute;
+            top: 57%;
+            left: 77%;
+            transform: translate(-50%, -50%);
+            animation: blobAnimation2 5s ease-in-out infinite alternate;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            margin-top: 100px;
+            margin-left: -30%;
+            
+          }
+          
+          @keyframes blobAnimation2 {
+            0%, 100% {
+              clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            }
+            25% {
+              clip-path: polygon(45% 0%, 100% 30%, 70% 100%, 0% 60%);
+            }
+            50% {
+              clip-path: polygon(30% 0%, 100% 10%, 80% 100%, 0% 40%);
+            }
+            75% {
+              clip-path: polygon(20% 0%, 100% 0%, 90% 100%, 0% 10%);
+            }
+          }
+          
+    }
+}
+
+}
