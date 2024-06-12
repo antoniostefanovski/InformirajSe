@@ -10,6 +10,8 @@ namespace InformirajSe.Domain.DTO
     {
         public string keyword { get; set; } = string.Empty;
 
-        public string order { get; set; } = string.Empty;
+        public string from { get; set; } = string.Empty;
+
+        public string to { get; set; } = string.Empty;
     }
 }

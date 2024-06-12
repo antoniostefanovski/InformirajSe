@@ -41,7 +41,7 @@ namespace InformirajSe.Web.Controllers
                 return BadRequest();
             }
 
-            var blogs = blogService.FilterBlogs(searchDTO.keyword, searchDTO.order);
+            var blogs = blogService.FilterBlogs(searchDTO.keyword, searchDTO.from, searchDTO.to);
 
             if(blogs is null)
             {

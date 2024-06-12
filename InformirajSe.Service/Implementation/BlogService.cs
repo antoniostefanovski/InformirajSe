@@ -32,7 +32,7 @@ namespace InformirajSe.Service.Implementation
             repository.Delete(blog);
         }
 
-        public List<Blog> FilterBlogs(string keyword, string order)
+        public List<Blog> FilterBlogs(string keyword, string from, string to)
         {
             var blogs = repository.GetAll();
 
@@ -41,9 +41,14 @@ namespace InformirajSe.Service.Implementation
                 blogs = blogs.Where(x => x.Title.Contains(keyword));
             }
 
-            if (!string.IsNullOrEmpty(order))
+            DateTime fromDate, toDate;
+
+            if (DateTime.TryParse(from, out fromDate) && DateTime.TryParse(to, out toDate))
             {
-                blogs = order == "descending" ? blogs.OrderByDescending(x => x.DateCreated) : blogs.OrderBy(x => x.DateCreated);
+                fromDate = DateTime.SpecifyKind(fromDate, DateTimeKind.Utc);
+                toDate = DateTime.SpecifyKind(toDate, DateTimeKind.Utc);
+
+                blogs = blogs.Where(x => x.DateCreated >= fromDate && x.DateCreated <= toDate);
             }
 
             return blogs.ToList();
