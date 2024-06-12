@@ -32,13 +32,13 @@ namespace InformirajSe.Service.Implementation
             repository.Delete(blog);
         }
 
-        public List<Blog> FilterBlogs(string keyword, string from, string to)
+        public List<Blog> FilterBlogs(string author, string from, string to)
         {
             var blogs = repository.GetAll();
 
-            if (!string.IsNullOrEmpty(keyword))
+            if (!string.IsNullOrEmpty(author))
             {
-                blogs = blogs.Where(x => x.Title.Contains(keyword));
+                blogs = blogs.Where(x => x.User.Name.Contains(author));
             }
 
             DateTime fromDate, toDate;

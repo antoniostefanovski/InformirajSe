@@ -41,7 +41,7 @@ namespace InformirajSe.Web.Controllers
                 return BadRequest();
             }
 
-            var blogs = blogService.FilterBlogs(searchDTO.keyword, searchDTO.from, searchDTO.to);
+            var blogs = blogService.FilterBlogs(searchDTO.author, searchDTO.from, searchDTO.to);
 
             if(blogs is null)
             {
@@ -51,7 +51,6 @@ namespace InformirajSe.Web.Controllers
             return Ok(blogs);
         }
 
-        // TODO: Return custom DTO which will determine if the UI will display delete / edit btns for the User.
         [AllowAnonymous]
         [HttpGet("blog/{id}")]
         public IActionResult GetBlog(Guid id)

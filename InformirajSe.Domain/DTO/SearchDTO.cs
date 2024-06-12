@@ -8,7 +8,7 @@ namespace InformirajSe.Domain.DTO
 {
     public class SearchDTO
     {
-        public string keyword { get; set; } = string.Empty;
+        public string author { get; set; } = string.Empty;
 
         public string from { get; set; } = string.Empty;
 

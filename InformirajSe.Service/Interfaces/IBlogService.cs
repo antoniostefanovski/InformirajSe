@@ -22,6 +22,6 @@ namespace InformirajSe.Service.Interfaces
 
         public List<Blog> FindMostInterestingBlogs();
 
-        public List<Blog> FilterBlogs(string keyword, string from, string to);
+        public List<Blog> FilterBlogs(string author, string from, string to);
     }
 }
