@@ -45,3 +45,32 @@ $primary-color: #6633ff;
     
     }
 }
+
+@media only screen and (max-width: 1250px){
+    .news-title{
+        color: $primary-color;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .news-section{
+        // @include test-border();
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Three columns with equal width */
+
+    }
+}
+@media only screen and (max-width: 650px){
+    .news-title{
+        color: $primary-color;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .news-section{
+        // @include test-border();
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Three columns with equal width */
+
+    }
+}

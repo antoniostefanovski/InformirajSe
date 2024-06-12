@@ -14,12 +14,15 @@ $primary-color: #6633ff;
     border:none;
 }
 
+
+
 .blog-preview-main{
     //@include test-border();
     
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    //margin-top: 2%;
     margin-bottom: 10%;
 
     .b-p-m-img{
@@ -69,7 +72,7 @@ $primary-color: #6633ff;
         margin-top: 5%;
         display: flex;
         justify-content: space-between;
-        margin-left: 5%;
+        margin-left: 12.5%;
         margin-top: 100px;
         width: 15%;
 
@@ -77,13 +80,11 @@ $primary-color: #6633ff;
             @include b-p-button();
             background-color: $primary-color;
             margin-right: 30px;
-            cursor: pointer;
         }
 
         .b-p-delete{
             @include b-p-button();
             background-color: red;
-            cursor: pointer;
         }
     }
 
@@ -193,7 +194,7 @@ $primary-color: #6633ff;
             margin-top: 5%;
             display: flex;
             justify-content: space-between;
-            margin-left: 5%;
+            margin-left: 12.5%;
             margin-top: 100px;
             width: 15%;
     
@@ -317,7 +318,7 @@ $primary-color: #6633ff;
             margin-top: 5%;
             display: flex;
             justify-content: space-between;
-            margin-left: 5%;
+            margin-left: 12.5%;
             margin-top: 100px;
             width: 15%;
     
