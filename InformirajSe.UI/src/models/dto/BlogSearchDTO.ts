@@ -1,9 +1,11 @@
 export class BlogSearchDTO {
-    public keyword?: string;
-    public order?: string;
+    public author?: string;
+    public from?: string;
+    public to?: string;
 
-    constructor(keyword: string, order: string){
-        this.keyword = keyword;
-        this.order = order;
+    constructor(author: string, from: string, to: string){
+        this.author = author;
+        this.from = from;
+        this.to = to;
     }
 }

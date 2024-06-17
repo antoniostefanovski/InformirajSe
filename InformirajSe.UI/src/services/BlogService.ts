@@ -113,8 +113,8 @@ export class BlogService{
         }
     }
     
-    public async filterBlogs(keyword: string, order: string): Promise<Blog[] | undefined> {
-        const model = new BlogSearchDTO(keyword, order);
+    public async filterBlogs(author: string, from: string, to: string): Promise<Blog[] | undefined> {
+        const model = new BlogSearchDTO(author, from, to);
 
         try {
             const response = await fetch('http://localhost:8080/api/filter-blogs', {

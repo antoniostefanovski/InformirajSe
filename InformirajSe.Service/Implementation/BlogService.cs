@@ -38,15 +38,15 @@ namespace InformirajSe.Service.Implementation
 
             if (!string.IsNullOrEmpty(author))
             {
-                blogs = blogs.Where(x => x.User.Name.Contains(author));
+                blogs = blogs.Where(x => x.User.UserName.Contains(author));
             }
 
             DateTime fromDate, toDate;
 
             if (DateTime.TryParse(from, out fromDate) && DateTime.TryParse(to, out toDate))
             {
-                fromDate = DateTime.SpecifyKind(fromDate, DateTimeKind.Utc);
-                toDate = DateTime.SpecifyKind(toDate, DateTimeKind.Utc);
+                fromDate = DateTime.SpecifyKind(fromDate, DateTimeKind.Local).ToUniversalTime();
+                toDate = DateTime.SpecifyKind(toDate, DateTimeKind.Local).ToUniversalTime();
 
                 blogs = blogs.Where(x => x.DateCreated >= fromDate && x.DateCreated <= toDate);
             }
